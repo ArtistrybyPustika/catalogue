@@ -91,25 +91,42 @@
             z-index: 1000; /* Make sure it's above other elements */
         }
 
-        @media (max-width: 720px) { /* Adjust max-width as needed */
-        
-            .highlight {
-            font-size: 1.68rem; /* Increased font size for this line */
-        }
-        .highlight_secondary {
-            font-size: 1rem; /* Increased font size for this line */
-        }
+        @media (max-width: 768px) { /* Mobile-specific adjustments */
+    
+    header {
+        padding: 150px 20px 100px; /* Reduce padding for smaller screens */
+        border-radius: 20px; /* Adjust border-radius for smaller screens */
+    }
 
+    .logo {
+
+        height: 180px; /* Reduce logo size */
+        top: -96px; /* Adjust positioning */
+        z-index: 2;
+    }
 
     h1 {
-        font-size: 3.3rem; /* Smaller header font size for mobile */
-	text-align: center; /* Align text to the left for mobile */
+        font-size: 4rem; /* Reduce font size for mobile */
+        top: 50;
     }
 
     p {
-        font-size: 1rem; /* Smaller paragraph font size for mobile */
-        margin: 10px 0 20px 0
-        text-align: left; /* Align text to the left for mobile */
+        font-size: 1.1rem; /* Adjust paragraph font size */
+        text-align: center;
+        padding: 0 15px; /* Add padding for better spacing on smaller screens */
+    }
+
+    .highlight {
+        font-size: 1.5rem; /* Adjust the font size of highlighted text */
+    }
+
+    .highlight_secondary {
+        font-size: 0.9rem; /* Adjust secondary highlight font size */
+    }
+
+    .social-icons img {
+        width: 40px; /* Adjust social icon size */
+        height: 40px;
     }
 }
 
